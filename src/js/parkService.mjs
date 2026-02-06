@@ -227,6 +227,6 @@ async function getJson(url) {
 }
 
 export async function getParkData() {
-  const parkData = await getJson("parks?parkCode=arch");
+  const parkData = await getJson("parks?parkCode=olym");
   return parkData.data[0];
 }
