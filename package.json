@@ -14,5 +14,11 @@
   "license": "ISC",
   "dependencies": {
     "vite": "^6.2.3"
+  },
+  "lint": "eslint *.js src/**/*.js",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.1",
+    "globals": "^17.3.0"
   }
 }

@@ -178,7 +178,7 @@ const park = {
   name: "Yellowstone",
   designation: "National Park"
 };
-export const parkInfoLinks = [
+const parkInfoLinks = [
   {
     name: "Current Conditions &#x203A;",
     link: "conditions.html",
@@ -228,7 +228,7 @@ export function getInfoLinks(data) {
 }
 
 export async function getParkData() {
-  const parkData = await getJson("parks?parkCode=olym");
+  const parkData = await getJson("parks?parkCode=yell ");
   return parkData.data[0];
 }
 
