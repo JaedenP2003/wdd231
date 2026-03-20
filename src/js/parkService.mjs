@@ -194,7 +194,7 @@ const parkInfoLinks = [
   },
   {
     name: "Visitor Centers &#x203A;",
-    link: "visitor_centers.html",
+    link: "visitor-center.html",
     image: park.images[9].url,
     description: "Learn about the visitor centers in the park."
   }
@@ -240,4 +240,9 @@ export async function getParkAlerts(code) {
 export async function getParkVisitorCenters(code) {
   const parkData = await getJson(`visitorcenters?parkCode=${code}`);
   return parkData.data;
+}
+
+export async function getParkVisitorCenterDetails(id) {
+  const parkData = await getJson(`visitorcenters?id=${id}`);
+  return parkData.data[0];
 }
